@@ -38,9 +38,9 @@ npx run cypress
 1. Download and install node.js and npm packages for your OS
 2. Run `npm install` in the shell
 2. Run `npx run cypress` in the shell to run the e2e tests headless
+</details>
 
-
-## Architecture of the Test framework and things to note:
+### Architecture of the Test framework and things to note:
 Page Object Model (POM): The framework uses the POM to organize and maintain page-specific actions and assertions in the searchPage.js.
 
 Modularity: Each step in the test scenario is separated into functions within the searchPage.js, promoting modularity.
