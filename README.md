@@ -1,6 +1,6 @@
-# Cypress assignment on search engine
+## Cypress assignment on search engine
 
-## Usage - Development
+### Usage - Development
 run e2e Tests in Cypress dashboard:
 
 ```shell
