@@ -1,3 +1,9 @@
+/*
+The test steps (search.cy.js) focus on the test
+scenario, while the page-related actions and 
+assertions are encapsulated in the searchPage.js.
+*/
+
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 import SearchPage from '../pages/searchPage'
 

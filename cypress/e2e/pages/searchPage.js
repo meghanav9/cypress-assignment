@@ -1,3 +1,8 @@
+/*
+Each step in the test scenario is separated into
+functions within the searchPage.js, promoting
+modularity.
+*/
 class SearchPage {
   visitSearchEngine(url) {
     cy.visit(url);
