@@ -13,6 +13,12 @@ Separation of Concerns: The test steps (search.cy.js) focus on the test scenario
 
 Feature: The feature file helps a non-technical person understand clearly what is being tested and also expand it to write more tests.
 
+Dynamic Data: The search engines and search terms are loaded from the searchTestData.json fixture, making the framework easily extendable with additional data.
+
+Scenario Outline: The use of a Scenario Outline in search.feature allows for data-driven testing, running the same steps with different sets of data.
+
+Parameterization: The steps in search.cy.js are parameterized to accept dynamic values for search engine and search term.
+
 This design should help in building a scalable and maintainable test framework that adheres to industry standards and principles.
 
 ### Usage - Development
