@@ -9,26 +9,26 @@ import SearchPage from '../pages/searchPage'
 
 const searchPage = new SearchPage();
 
-Given('I open the Google search engine', () => {
-  searchPage.visitSearchEngine('https://www.google.com');
+Given('I open the {string} search engine', (searchEngine) => {
+  searchPage.visitSearchEngine(searchEngine);
 });
 
-When('I submit a search term', () => {
-  searchPage.submitSearchTerm('Test automation with Cypress and Cucumber');
+When('I submit a search term {string}', (searchTerm) => {
+  searchPage.submitSearchTerm(searchTerm);
 });
 
-Then('I assert the first returned item as the expected result', () => {
-  searchPage.assertFirstResult('How to Run Tests with Cypress and Cucumber');
+Then('I assert the first returned item as the {string}', (expectedDescription) => {
+  searchPage.assertFirstResult(expectedDescription);
 });
 
-Given('I open the Bing search engine', () => {
-  searchPage.visitSearchEngine('https://www.bing.com');
+Then('I assert the first returned item\'s url has https', () => {
+  searchPage.assertFirstResultURLHasLink();
 });
 
-When('I submit a search term', () => {
-  searchPage.submitSearchTerm('Test automation with Cypress and Cucumber');
+Then('I assert the first returned item\'s url as {string}', (expectedUrl) => {
+  searchPage.assertFirstResultURL(expectedUrl);
 });
 
-Then('I assert the first returned item as the expected result', () => {
-  searchPage.assertFirstResult('Cypress and Cucumber');
+Then('I assert there are no results returned with an error message {string}', (errorMessage) => {
+  searchPage.assertErrorMessage(errorMessage);
 });

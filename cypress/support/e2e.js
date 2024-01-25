@@ -20,3 +20,12 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from failing the test
     return false
 })
+
+before(() => {
+    cy.fixture('searchTestData').then((data) => {
+      Cypress.env('searchEngines', data.searchEngines.reduce((acc, engine) => {
+        acc[engine.name] = engine.url;
+        return acc;
+      }, {}));
+    });
+  });

@@ -1,0 +1,44 @@
+{
+    "searchEngines": [
+      {
+        "name": "Google",
+        "url": "https://www.google.com"
+      },
+      {
+        "name": "Yahoo",
+        "url": "https://www.search.yahoo.com"
+      },
+      {
+        "name": "Bing",
+        "url": "https://www.bing.com"
+      }
+    ],
+    "searchTerms": [
+        "Test automation with Cypress and Cucumber",
+        "what does && mean in java",
+        "Test automation with Cypress and Cucumber",
+        12345, 
+        "Test automation with Cypress and Cucumber",
+        12345,
+        "freferfferferfrerferferferferferferferfer"
+    ],
+    "expectedDescriptions": [
+        "How to Run Tests with Cypress and Cucumber",
+        "Java Operator – &",
+        "How to Run Tests with Cypress and Cucumber",
+        "D Billions Kids Songs - YouTube",
+        "Cypress and Cucumber",
+        "D Billions Kids Songs"
+    ],
+    "expectedUrls": [
+        "https://www.browserstack.com/guide/how-to-run-cypress-cucumber-test",
+        "https://www.freecodecamp.org/news/java-operator-and-or-logical-operators/",
+        "https://www.browserstack.com/guide/how-to-run-cypress-cucumber-test",
+        "https://www.youtube.com/watch?v=LRXDfJh9ZKc",
+        "https://www.browserstack.com/guide/how-to-run-cypress-cucumber-test",
+        "https://www.youtube.com/watch?v=LRXDfJh9ZKc"
+    ],
+    "errorMessages": [
+        "Make sure all words are spelled correctly."
+    ]
+}
